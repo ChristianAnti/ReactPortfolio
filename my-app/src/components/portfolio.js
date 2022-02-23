@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import aboutMe from "./pages/aboutMe";
-import myWork from "./pages/myWork";
-import contactMe from "./pages/contactMe";
+import aboutMe from "./pages/AboutMe";
+import myWork from "./pages/MyWork";
+import contactMe from "./pages/ContactMe";
 
 
-export default function PortfolioContainer() {
+export default function Portfolio() {
     const [currentPage, setCurrentPage] = useState("aboutMe");
 
 
@@ -18,6 +18,16 @@ export default function PortfolioContainer() {
         }else if (currentPage === "aboutMe") {
             return <aboutMe/>;
         }
-    }
+    };
+
+    return (
+        <div>
+          <navBar currentPage={currentPage} setCurrentPage={setCurrentPage} />
+    
+          {/* call renderPage to render a component */}
+          {renderPage()}
+          <Footer />
+        </div>
+      );
 
 }

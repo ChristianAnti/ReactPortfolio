@@ -1,8 +1,7 @@
 import React from "react";
 
-export default function MyWork() {
+export default function Resume() {
     return (
         <>something</>
     )
 }
-
