@@ -2,7 +2,7 @@
 // remember to style later 
 // import 
 //ill have to import my resume as a pdf or text document or something 
-import Pdf from "../../assets/ResumeChristianGleason2022.pdf"
+import Pdf from "../../assets/ResumeChristian2022.pdf"
 
 export default function Resume(){
 
