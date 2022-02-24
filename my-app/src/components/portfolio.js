@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import AboutMe from "./pages/AboutMe";
 import myWork from "./pages/MyWork";
 import contactMe from "./pages/ContactMe";
-import Footer from "./footer";
+import Footer from "../components/Footer";
 // remember to style later 
 // import 
 
