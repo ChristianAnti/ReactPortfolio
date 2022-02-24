@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import aboutMe from "./pages/AboutMe";
+import AboutMe from "./pages/AboutMe";
 import myWork from "./pages/MyWork";
 import contactMe from "./pages/ContactMe";
-
+import Footer from "./footer";
+// remember to style later 
+// import 
 
 export default function Portfolio() {
     const [currentPage, setCurrentPage] = useState("aboutMe");
@@ -23,8 +25,6 @@ export default function Portfolio() {
     return (
         <div>
           <navBar currentPage={currentPage} setCurrentPage={setCurrentPage} />
-    
-          {/* call renderPage to render a component */}
           {renderPage()}
           <Footer />
         </div>

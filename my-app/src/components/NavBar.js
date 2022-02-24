@@ -1,6 +1,6 @@
 import React from "react";
-//imports styling when done :))))
-// import ""
+// remember to style later 
+// import 
 
 export default function NavBar({ currentPage, setCurrentPage }) {
     return (
@@ -15,7 +15,6 @@ export default function NavBar({ currentPage, setCurrentPage }) {
                 >
                     About Me
                 </a>
-
                 <a
                     href="#1"
                     onClick={() => setCurrentPage("MyWork")}
@@ -23,7 +22,6 @@ export default function NavBar({ currentPage, setCurrentPage }) {
                 >
                     MyWork
                 </a>
-
                 <a
                     href="#1"
                     onClick={() => setCurrentPage("Contactme")}
@@ -31,7 +29,6 @@ export default function NavBar({ currentPage, setCurrentPage }) {
                 >
                     Contact
                 </a>
-
                 <a
                     href="#1"
                     onClick={() => setCurrentPage("Resume")}

@@ -1,4 +1,6 @@
 import React from "react";
+// remember to style later 
+// import 
 
 export default function aboutMe() {
     return (
@@ -10,9 +12,11 @@ export default function aboutMe() {
             alt="Monkey at keyboard"
             src={require('../../assets/MeInRealLife.jpg')}
             />
+            <div>
             <p>
-                Hi I'm Christian im a full stack developer. :)
+                Hi I'm Christian im a full stack developer. :) I like monkeys 🐒.
             </p>
+            </div>
         </section>
         </>
     );
