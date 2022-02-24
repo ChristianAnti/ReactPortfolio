@@ -5,7 +5,9 @@ import Portfolio from "./components/Portfolio";
 
 function App() {
   useEffect(() => {
-    document.querySelector("#root").classList.add("container")
+    if (!document.querySelector("#root").classList.contains('container')) {  // to prevent infinite rerendering of the component
+      document.querySelector("#root").classList.add("container")
+    }    
   }, [])
   return <Portfolio />
 }

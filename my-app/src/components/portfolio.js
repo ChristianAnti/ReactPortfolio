@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import AboutMe from "./pages/AboutMe";
+import aboutMe from "./pages/AboutMe"
 import MyWork from "./pages/MyWork";
 import ContactMe from "./pages/ContactMe";
-import Footer from "../components/Footer";
 import Resume from "./pages/Resume"
-import NavBar from "../components/NavBar";
+import Footer from "./Footer";
+import NavBar from "./NavBar";
 // remember to style later 
 // import 
 
