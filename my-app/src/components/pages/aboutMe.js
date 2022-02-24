@@ -1,24 +1,23 @@
 import React from "react";
-// remember to style later 
-// import 
 
-export default function aboutMe() {
-    return (
-        <>
-        <section>
-            <h1> Meet Christian Gleason </h1>
-            <img
-            className="me"
-            alt="Monkey at keyboard"
+export default function AboutMe() {
+  return (
+    <>
+    <section className="info-container" id="info">
+      <h1>Christian Gleason</h1>
+      <div className="about-me-container">
+        <div className="bio-image-container">
+          <img
+            className="Monkey"
+            alt="The Real Me"
             src={require('../../assets/MeInRealLife.jpg')}
-            />
-            <div>
-            <p>
-                Hi I'm Christian im a full stack developer. :) I like monkeys 🐒.
-            </p>
-            </div>
-        </section>
-        </>
-    );
+          />
+        </div>
+        <p>
+            Hi I'm Christian im a full stack developer. :) I like monkeys 🐒.
+        </p>
+      </div>
+    </section>
+    </>
+  );
 }
-

@@ -1,4 +1,4 @@
-import React from "react";
+
 // remember to style later 
 // import 
 //ill have to import my resume as a pdf or text document or something 
