@@ -1,14 +1,9 @@
 import React, {useEffect} from "react";
 // import "./styles/App.css";
-import Portfolio from "./components/Portfolio";
+import Portfolio from "./components/portfolio";
 
 
 function App() {
-  useEffect(() => {
-    if (!document.querySelector("#root").classList.contains('container')) {  // to prevent infinite rerendering of the component
-      document.querySelector("#root").classList.add("container")
-    }    
-  }, [])
   return <Portfolio />
 }
 

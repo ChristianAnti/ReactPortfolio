@@ -57,39 +57,46 @@ export default function Contact() {
     };
 
     return (
-        <div className="contact-me-container">
+        <section className="container contact-me-container">
             <h2>Contact Me</h2>
             <form className="form">
-                <div className="input-container">
-                    <label htmlFor="nameInput">Name:</label>
-                    <br></br>
-                    <input
-                        id="nameInput"
-                        value={name}
-                        name="name"
-                        onChange={handleInputChange}
-                        type="text"
-                        placeholder="Your name"
-                    />
-                    <br></br>
-                </div>
-                <div className="input-container">
-                    <label htmlFor="emailInput">Email address:</label>
-                    <br></br>
-                    <input
-                        id="emailInput"
-                        value={email}
-                        name="email"
-                        onChange={handleInputChange}
-                        type="email"
-                        placeholder="Your email"
-                    />
-                    <br></br>
-                </div>
-                <div className="input-container">
+                <div className="row">              
+                    <div className="form-group col-lg-6">
+                        <label htmlFor="nameInput">Name:</label>
+                        <br></br>
+                        <input
+                            className="form-control"
+                            id="nameInput"
+                            value={name}
+                            name="name"
+                            onChange={handleInputChange}
+                            type="text"
+                            placeholder="Your name"
+                        />
+                    </div>
+                </div>  
+
+                <div className="row">
+                    <div className="form-group col-lg-6">
+                        <label htmlFor="emailInput">Email address:</label>
+                        <br></br>
+                        <input
+                            className="form-control"
+                            id="emailInput"
+                            value={email}
+                            name="email"
+                            onChange={handleInputChange}
+                            type="email"
+                            placeholder="Your email"
+                        />
+                    </div>
+                </div>              
+
+                <div className="form-group">
                     <label htmlFor="messageInput">Message:</label>
                     <br></br>
                     <textarea
+                        className="form-control"
                         id="messageInput"
                         value={message}
                         name="message"
@@ -104,11 +111,11 @@ export default function Contact() {
                         <p className="error-text">{errorMessage}</p>
                     </div>
                 )}
-                <button type="button" onClick={handleFormSubmit}>
+                <button type="button" onClick={handleFormSubmit} className="btn btn-primary">
                     Submit
                 </button>
             </form>
-        </div>
+        </section>
     );
 }
 

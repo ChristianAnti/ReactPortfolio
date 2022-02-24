@@ -2,25 +2,24 @@ import React from "react";
 // remember to style later 
 // import 
 
-
 export default function Footer() {
   return (
-    <section id="contact">
-      <div className="footer-container">
-        <a href="https://github.com/ChristianAnti" target="_blank">
+    <footer id="contact">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
+        <a className="nav-link" href="https://github.com/ChristianAnti" target="_blank">
           <div className="icon-text-container">
             <i className="bi bi-github"></i>
-            <p id="icon-text">Github</p>
+            <span id="icon-text">Github</span>
           </div>
         </a>
-        <a href="https://www.linkedin.com/in/christian-gleason-ba973622a/" target="_blank">
+        <a className="nav-link" href="https://www.linkedin.com/in/christian-gleason-ba973622a/" target="_blank">
           <div className="icon-text-container">
             <i className="bi bi-linkedin"></i>
-            <p id="icon-text">LinkedIn</p>
+            <span id="icon-text">LinkedIn</span>
           </div>
         </a>
-      </div>
-    </section>
+      </nav>
+    </footer>
   );
 }
 
