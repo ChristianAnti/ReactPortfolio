@@ -7,7 +7,7 @@ import React from "react";
 export default function NavBar({ currentPage, setCurrentPage }) {    
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">                   
-            <a className="navbar-brand" href="#" onClick={() => setCurrentPage("AboutMe")}>Christian Gleazson 🐒</a>                
+            <a className="navbar-brand" href="#" onClick={() => setCurrentPage("AboutMe")}>Christian Gleason 🐒</a>                
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-dropdown">
                 <span className="navbar-toggler-icon"></span>
             </button>
@@ -25,7 +25,7 @@ export default function NavBar({ currentPage, setCurrentPage }) {
                         href="#1"
                         onClick={() => setCurrentPage("MyWork")}
                     >
-                        MyWork
+                        My Work
                     </a>
                     <a
                         className={`nav-link ${currentPage === "ContactMe" ? "active" : ""}`}

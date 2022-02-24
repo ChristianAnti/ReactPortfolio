@@ -9,7 +9,7 @@ const projectCards = [
         github: "https://github.com/kennedysam168/Group-Project-1",
         deployedLink: "https://kennedysam168.github.io/Group-Project-1/",
         src: "",
-        alt: "",
+        alt: "Canta screenshot",
         id: 1,
     },
     {
@@ -18,7 +18,7 @@ const projectCards = [
         github: "https://github.com/ChristianAnti/TheDailyBeat",
         deployedLink: "https://sleepy-scrubland-38633.herokuapp.com/signup",
         src: "",
-        alt: "",
+        alt: "The daily beat screenshot",
         id: 2,
     },
     {
@@ -27,14 +27,14 @@ const projectCards = [
         github: "https://github.com/ChristianAnti/BudgetTrackerHW",
         deployedLink: "https://still-journey-94045.herokuapp.com/",
         src: "",
-        alt: "",
+        alt: "The budget tracker screenshot",
         id: 3,
     }
 ]
 
 export default function Projects() {
     return (
-        <section className="project-container">
+        <section className="container project-container">
             <h1 id="projects">My work</h1>
             {projectCards.map((project) => (
                 <div key={project.id} className="project-card">
@@ -54,8 +54,7 @@ export default function Projects() {
                             href={project.deployedLink}
                             className="btn"
                             target="_blank"
-                        >Deployed App</a
-                        >
+                        >Deployed App</a>
                         <a
                             href={project.github}
                             className="btn"

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import aboutMe from "./pages/AboutMe"
+import AboutMe from "./pages/AboutMe"
 import MyWork from "./pages/MyWork";
 import ContactMe from "./pages/ContactMe";
 import Resume from "./pages/Resume"
@@ -14,7 +14,7 @@ export default function Portfolio() {
 
     const renderPage = () => {
         if (currentPage === "AboutMe") {
-            return <aboutMe/>;
+            return <AboutMe/>;
         }else if (currentPage === "MyWork") {
             return <MyWork/>;
         }else if (currentPage === "ContactMe") {
@@ -25,7 +25,7 @@ export default function Portfolio() {
     };
 
     return (
-        <div>
+        <div id="flex-container">
           <NavBar currentPage={currentPage} setCurrentPage={setCurrentPage} />
           {renderPage()}
           <Footer />

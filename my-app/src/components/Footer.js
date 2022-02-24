@@ -2,6 +2,7 @@ import React from "react";
 // remember to style later 
 // import 
 
+
 export default function Footer() {
   return (
     <footer id="contact">
@@ -18,7 +19,7 @@ export default function Footer() {
             <span id="icon-text">LinkedIn</span>
           </div>
         </a>
-      </nav>
+      </nav>      
     </footer>
   );
 }
