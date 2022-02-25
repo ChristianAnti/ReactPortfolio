@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body {
+  /* keep body at 100% height of the viewport */
+  height: 100vh; 
+}
+
+#root, #flex-container {
+  height: 100%; 
+}
+
+#flex-container {  
+  /* all page elements are wrapped in a flexbox */
+  display: flex;
+  flex-direction: column;
+}
+
+#flex-container > *{
+  /* make them shrink by default */
+  flex-shrink: 0;
+}
+#flex-container section {
+  /* the section elements should fill all the space in the page*/
+  flex-grow: 1;
+}
+
+h1, h2, h3
+{
+  margin-top: 0.5em;
+}
