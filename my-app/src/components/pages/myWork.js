@@ -8,7 +8,7 @@ const projectCards = [
         description: "Canta was a project done with a group of other students from my coding bootcamp. Canta was an app based around locating medical care for those in need.",
         github: "https://github.com/kennedysam168/Group-Project-1",
         deployedLink: "https://kennedysam168.github.io/Group-Project-1/",
-        src: "",
+        src: "Canta",
         alt: "Canta screenshot",
         id: 1,
     },
@@ -17,7 +17,7 @@ const projectCards = [
         description: "Canta was a project done with a group of other students from my coding bootcamp. Canta was an app based around locating medical care for those in need.",
         github: "https://github.com/ChristianAnti/TheDailyBeat",
         deployedLink: "https://sleepy-scrubland-38633.herokuapp.com/signup",
-        src: "",
+        src: "DailyBeat",
         alt: "The daily beat screenshot",
         id: 2,
     },
@@ -26,7 +26,7 @@ const projectCards = [
         description: "Canta was a project done with a group of other students from my coding bootcamp. Canta was an app based around locating medical care for those in need.",
         github: "https://github.com/ChristianAnti/BudgetTrackerHW",
         deployedLink: "https://still-journey-94045.herokuapp.com/",
-        src: "",
+        src: "Tracker",
         alt: "The budget tracker screenshot",
         id: 3,
     }
@@ -40,7 +40,7 @@ export default function Projects() {
                 <div key={project.id} className="project-card">
                     <div className="outer-image-container small-left">
                         <img
-                            src={require(`../../assets/${project.src}.png`)}
+                            src={require(`../../assets/${project.src}.JPG`)}
                             className="card-img-top"
                             alt={project.alt}
                         />
@@ -54,12 +54,12 @@ export default function Projects() {
                             href={project.deployedLink}
                             className="btn"
                             target="_blank"
-                        >Deployed App</a>
+                        >Deployed App 🦾</a>
                         <a
                             href={project.github}
                             className="btn"
                             target="_blank"
-                        >Project repository</a
+                        >Project repository 🔧</a
                         >
                     </div>
                 </div>
